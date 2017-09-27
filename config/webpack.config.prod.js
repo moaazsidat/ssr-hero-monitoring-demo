@@ -33,7 +33,7 @@ if (env.stringified['process.env'].NODE_ENV !== '"production"') {
 }
 
 // Note: defined here because it will be used more than once.
-const cssFilename = 'static/css/[name].[contenthash:8].css';
+const cssFilename = 'static/css/[name].css';
 
 // ExtractTextPlugin expects the build output to be flat.
 // (See https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/27)
@@ -66,8 +66,8 @@ module.exports = {
     path: paths.appBuild,
     // Generated JS file names (with nested folders). // There will be one main bundle, and one file per asynchronous chunk.
     // We don't currently advertise code splitting but Webpack supports it.
-    filename: 'static/js/[name].[chunkhash:8].js',
-    chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js',
+    filename: 'static/js/[name]-bundle.js',
+    chunkFilename: 'static/js/[name].chunk.js',
     // We inferred the "public path" (such as / or /my-project) from homepage.
     publicPath: publicPath,
     // Point sourcemap entries to original disk location
@@ -229,12 +229,12 @@ module.exports = {
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     // In production, it will be an empty string unless you specify "homepage"
     // in `package.json`, in which case it will be the pathname of that URL.
-    new webpack.optimize.OccurrenceOrderPlugin(),
     new InterpolateHtmlPlugin(env.raw),
     // Generates an `index.html` file with the <script> injected.
     new HtmlWebpackPlugin({
       inject: 'head',
       template: paths.appHtml,
+      chunks: ['monitoring'],
       minify: {
         removeComments: true,
         collapseWhitespace: true,
@@ -246,7 +246,6 @@ module.exports = {
         minifyJS: true,
         minifyCSS: true,
         minifyURLs: true,
-        chunks: ['monitoring'],
       },
     }),
     // Makes some environment variables available to the JS code, for example:
