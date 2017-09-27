@@ -10,12 +10,13 @@ npm install
 npm run build
 npm run start:server
 ```
+or yarn
 
 ### Development
-This just runs create react app, its great!
 ```bash
 npm start
 ```
+or yarn
 
 ### Deploy
 ```bash
