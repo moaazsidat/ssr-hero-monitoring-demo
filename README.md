@@ -1,7 +1,7 @@
-Server Side Rendering with Create React App
-===========================================
+SSR demo for hero element monitoring
+====================================
 
-This is the v2 version of my react app, checkout my article here: https://medium.com/@benlu/ssr-with-create-react-app-v2-1b8b520681d9
+Based on [Server Side Rendering with Create React App](https://github.com/ayroblu/ssr-create-react-app-v2) 
 
 Install
 -------
@@ -15,5 +15,10 @@ npm run start:server
 This just runs create react app, its great!
 ```bash
 npm start
+```
+
+### Deploy
+```bash
+now
 ```
 
