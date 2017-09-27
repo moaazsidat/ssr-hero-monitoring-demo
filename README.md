@@ -1,7 +1,7 @@
 SSR demo for hero element monitoring
 ====================================
 
-Based on [Server Side Rendering with Create React App](https://github.com/ayroblu/ssr-create-react-app-v2) 
+SSR react boilerplate from [Server Side Rendering with Create React App](https://github.com/ayroblu/ssr-create-react-app-v2) 
 
 Install
 -------
