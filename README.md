@@ -23,3 +23,5 @@ or yarn
 now
 ```
 
+## Resources
+- [inject some chunks into head, and some assets into body](https://github.com/jantimon/html-webpack-plugin/issues/252)
