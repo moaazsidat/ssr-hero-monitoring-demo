@@ -27,12 +27,11 @@ const mutationCallback = mutation => {
 
         childrenArray.forEach(c => {
           if (c.dataset && c.dataset.elementtiming && !markersMap[c.dataset.elementtiming]) {
-            console.log(c.tagName)
             if (c.tagName === IMAGE) {
               const img = new Image()
-              img.addEventListener('load', () => {
+              img.onload = () => {
                 performance.mark(c.dataset.elementtiming);
-              })
+              }
               markersMap[c.dataset.elementtiming] = true
               img.src = c.src
             } else {
