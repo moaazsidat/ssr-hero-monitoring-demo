@@ -6,12 +6,13 @@ export default ({
   style = {
     display: 'block',
     width: '99%',
-  }
+  },
+  elementtiming,
 }) => (
   <img
     alt="testing"
     src={src}
     style={style}
-    data-elementtiming={'banner-image'}
+    data-elementtiming={elementtiming || "banner-image"}
   />
 )

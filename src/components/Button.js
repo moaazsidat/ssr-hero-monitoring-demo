@@ -22,7 +22,7 @@ export default ({
     ref={(node) => this.buttonNode = node}
     onClick={() => onClick(this.buttonNode)}
     style={style}
-    data-elementtiming={"click-me-button"}
+    data-elementtiming="click-me-button"
   >
     {children}
   </button>

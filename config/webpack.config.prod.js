@@ -234,7 +234,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: 'head',
       template: paths.appHtml,
-      chunks: ['monitoring'],
+      chunks: ['main'],
       minify: {
         removeComments: true,
         collapseWhitespace: true,

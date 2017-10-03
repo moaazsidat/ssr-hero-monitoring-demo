@@ -21,6 +21,10 @@ export default class App extends Component {
         >Click me!</Button>
         <h4>image element</h4>
         <Image src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/a3/84f770789511e7bd35dd2b717c014a/Deep-learningheader.jpg?auto=format%2Ccompress&dpr=2" />
+        <Image
+          src="http://pirlwww.lpl.arizona.edu/~perry/Messenger/South_polar_mosaic.png"
+          elementtiming="really-big-banner"
+        />
       </div>
     )
   }
