@@ -1,7 +1,7 @@
 SSR demo for hero element monitoring
 ====================================
 
-Based on [Server Side Rendering with Create React App](https://github.com/ayroblu/ssr-create-react-app-v2) 
+SSR react boilerplate from [Server Side Rendering with Create React App](https://github.com/ayroblu/ssr-create-react-app-v2) 
 
 Install
 -------
@@ -10,12 +10,13 @@ npm install
 npm run build
 npm run start:server
 ```
+or yarn
 
 ### Development
-This just runs create react app, its great!
 ```bash
 npm start
 ```
+or yarn
 
 ### Deploy
 ```bash
